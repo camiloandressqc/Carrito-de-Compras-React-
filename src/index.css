@@ -1,13 +1,189 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+:root {
+  --color-card-primary: #c7ecff;
+  --color-yellow-primary: goldenrod;
+  --color-grey-primary: rgb(146, 146, 145);
+  --color-green-primary: mediumseagreen;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+html{
+  font-family: 'Patua One', cursive;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 40px;
+  background-color: #e3ecfd;
+  color: #09021c;
 }
+
+.App{
+  display:grid;
+  grid-template-columns: 350px 350px 350px;
+  justify-content:center;
+
+}
+
+.productList{
+  display: flex;
+  justify-content: space-evenly ;
+  margin-top: 5rem;
+}
+
+.productCard{
+  position: relative;
+  background-color: rgb(255 255 255 / 45%);
+  margin: 1rem;
+  flex: 1 0 25rem;
+  max-width: 30rem;
+  max-height: 50rem;
+  transition: 0.2s;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+
+
+.productCard:hover{
+  transform: translateY(-0.5rem);
+  box-shadow:0.5rem 0.75rem 1.5rem #807f7f
+}
+
+.productImage{
+  margin-top: 3rem;
+  max-width: 35%;
+  height: auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(80%);
+  
+}
+
+
+.productCard_fastSelling {
+  position: absolute;
+  font-size: 2rem;
+  left: 0;
+  top: 0;
+  margin: 1rem;
+  fill: var(--color-grey-primary);
+
+}
+
+
+.productCard_content {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.productName{
+  font-size: 1.8rem;
+
+  color: darkmagenta;
+}
+
+.displayStack__1{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center ;
+}
+
+.displayStack__2{
+  margin-bottom: 1rem;
+}
+
+
+.productPrice{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: oswald;
+  margin: 0 1rem;
+
+}
+
+.productSales,
+.productTime{
+  font-size: 1.2rem;
+}
+
+
+.productAdd{
+  border: 2px dashed darkmagenta;
+  margin-bottom: 1.1rem;
+  padding: 6px 7px;
+  background-color: darkmagenta;
+  color: white;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.productAdd:hover{
+  background: none;
+  color: darkmagenta;
+  transition: 0.2s;
+}
+
+
+/* Estilos Tablas */
+div>article>div>table{
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+}
+div>article>div>table>thead>tr>th{
+  padding: 10px;
+  background-color: #191919;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: 'Squada One', cursive;
+  color: #fff;
+}
+div>article>div>table>tbody>tr>td{
+  border-top: 1px solid #bbbbbb;
+  padding: 6px;
+  text-align: center;
+  background-color: #e0dfdf;
+  font-size: 20px;
+}
+button {
+  padding: 10px 50px;
+  background: #404040;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+div>article>div>table>tbody>tr>td>img {
+  width: 120px;
+}
+.action{
+  font-size: 30px;
+  color: #e03409;
+}
+.action>i{
+  cursor: pointer;
+}
+.stockedit{
+  background: #404040;
+  color: #fff;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
